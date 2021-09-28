@@ -1,11 +1,12 @@
 # 8weekSQLChallenge
-8 case study provided by Danny Ma who I followed on LinkedIn with addition thoughts of mine. This git is to document my answers and Postgre learning process.  
+  
+8 case study provided by Danny Ma who I follow on LinkedIn with the addition of why these case study questions are simple yet conveying a story for your stakeholders
 
--- 1. What is the total amount each customer spent at the restaurant?
--- SELECT
---  	s.customer_id, sum(m.price) total_amount
--- FROM dannys_diner.sales s join dannys_diner.menu m on s.product_id = m.product_id
--- GROUP BY s.customer_id;
+1. What is the total amount each customer spent at the restaurant?
+
+`SELECT s.customer_id, sum(m.price) total_amount  
+FROM dannys_diner.sales s join dannys_diner.menu m on s.product_id = m.product_id  
+GROUP BY s.customer_id;`  
 
 -- 2. How many days has each customer visited the restaurant?
 -- SELECT customer_id , count(distinct order_date)
