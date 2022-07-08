@@ -19,3 +19,5 @@ FROM (SELECT s.customer_id,
      	join dannys_diner.menu m 
      		on s.product_id = m.product_id) q1
 GROUP BY customer_id;
+
+--end
