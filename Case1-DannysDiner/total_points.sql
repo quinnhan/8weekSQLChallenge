@@ -1,5 +1,6 @@
 -- 9.  If each $1 spent equates to 10 points and sushi has a 2x points multiplier 
 -- - how many points would each customer have?
+-- This query was based on the assumption of everyone (member/non-member get points)
 -- Temp table
 WITH point_conversion AS 
 	(SELECT s.customer_id, 
